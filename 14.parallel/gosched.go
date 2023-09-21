@@ -7,18 +7,18 @@ import (
 )
 
 func main() {
+	runtime.GOMAXPROCS(1)
+
 	go func() {
-		for i := 0; i < 5; i++ {
+		for i := 0; i < 1000; i++ {
 			fmt.Println("goroutine 1:", i)
-			time.Sleep(time.Millisecond * 100)
 			runtime.Gosched() // Yield the CPU to other goroutines
 		}
 	}()
 
 	go func() {
-		for i := 0; i < 5; i++ {
+		for i := 0; i < 1000; i++ {
 			fmt.Println("goroutine 2:", i)
-			time.Sleep(time.Millisecond * 100)
 			runtime.Gosched() // Yield the CPU to other goroutines
 		}
 	}()
