@@ -6,11 +6,15 @@
 - 並行（concurrent）: CPU数、コア数の限界を超えて複数の仕事を同時に行う（スループットは変わらない）
 - 並列（parallel）: 複数のCPU、コアを効率よく扱って計算速度を上げる（スループットが向上する）
 
->Concurrency is the ability of two or more threads to execute in overlapping time periods. 
-Parallelism is the ability to execute two or more threads simultaneously.
-(訳)並行処理は、複数個のスレッドを共通の期間内で実行する能力のことです。
-並列処理は、複数個のスレッドを同時に実行する能力のことです。
-[出典:書籍 Linux System Programming, 2nd Edition Chap.7](https://learning.oreilly.com/library/view/linux-system-programming/9781449341527/)
+>Concurrency is the ability of two or more threads to execute in overlapping time periods.
+>
+>Parallelism is the ability to execute two or more threads simultaneously.
+>
+>(訳)並行処理は、複数個のスレッドを共通の期間内で実行する能力のことです。
+>
+>並列処理は、複数個のスレッドを同時に実行する能力のことです。
+>
+>[出典:書籍 Linux System Programming, 2nd Edition Chap.7](https://learning.oreilly.com/library/view/linux-system-programming/9781449341527/)
 
 [並行処理と並列処理](https://zenn.dev/hsaki/books/golang-concurrency/viewer/term)
 
