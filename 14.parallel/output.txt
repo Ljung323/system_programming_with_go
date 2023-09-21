@@ -1,0 +1,436 @@
+% go build -gcflags=-S arguments.go
+# command-line-arguments
+main.sub1 STEXT size=149 args=0x8 locals=0x50 funcid=0x0 align=0x0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       TEXT    main.sub1(SB), ABIInternal, $80-8
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       CMPQ    SP, 16(R14)
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $0, $-2
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       JLS     129
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $0, $-1
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       SUBQ    $80, SP
+        0x000a 00010 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       MOVQ    BP, 72(SP)
+        0x000f 00015 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       LEAQ    72(SP), BP
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       FUNCDATA        $0, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       FUNCDATA        $1, gclocals·hsx9l3OeZCHsoOW++oOEng==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       FUNCDATA        $2, main.sub1.stkobj(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       FUNCDATA        $5, main.sub1.arginfo1(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       FUNCDATA        $6, main.sub1.argliveinfo(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $3, $1
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVUPS  X15, main..autotmp_9+40(SP)
+        0x001a 00026 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVUPS  X15, main..autotmp_9+56(SP)
+        0x0020 00032 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       LEAQ    type:string(SB), CX
+        0x0027 00039 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVQ    CX, main..autotmp_9+40(SP)
+        0x002c 00044 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       LEAQ    main..stmp_0(SB), CX
+        0x0033 00051 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVQ    CX, main..autotmp_9+48(SP)
+        0x0038 00056 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       IMULQ   AX, AX
+        0x003c 00060 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       PCDATA  $1, $1
+        0x003c 00060 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       NOP
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       CALL    runtime.convT64(SB)
+        0x0045 00069 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       LEAQ    type:int(SB), CX
+        0x004c 00076 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVQ    CX, main..autotmp_9+56(SP)
+        0x0051 00081 (/Users/user/system_programming_with_go/14.parallel/arguments.go:9)       MOVQ    AX, main..autotmp_9+64(SP)
+        0x0056 00086 (<unknown line number>)    NOP
+        0x0056 00086 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    os.Stdout(SB), BX
+        0x005d 00093 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    go:itab.*os.File,io.Writer(SB), AX
+        0x0064 00100 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    main..autotmp_9+40(SP), CX
+        0x0069 00105 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVL    $2, DI
+        0x006e 00110 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    DI, SI
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) PCDATA  $1, $0
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) CALL    fmt.Fprintln(SB)
+        0x0076 00118 (/Users/user/system_programming_with_go/14.parallel/arguments.go:10)      MOVQ    72(SP), BP
+        0x007b 00123 (/Users/user/system_programming_with_go/14.parallel/arguments.go:10)      ADDQ    $80, SP
+        0x007f 00127 (/Users/user/system_programming_with_go/14.parallel/arguments.go:10)      NOP
+        0x0080 00128 (/Users/user/system_programming_with_go/14.parallel/arguments.go:10)      RET
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:10)      NOP
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $1, $-1
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $0, $-2
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       MOVQ    AX, 8(SP)
+        0x0086 00134 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       CALL    runtime.morestack_noctxt(SB)
+        0x008b 00139 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       MOVQ    8(SP), AX
+        0x0090 00144 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       PCDATA  $0, $-1
+        0x0090 00144 (/Users/user/system_programming_with_go/14.parallel/arguments.go:8)       JMP     0
+        0x0000 49 3b 66 10 76 7b 48 83 ec 50 48 89 6c 24 48 48  I;f.v{H..PH.l$HH
+        0x0010 8d 6c 24 48 44 0f 11 7c 24 28 44 0f 11 7c 24 38  .l$HD..|$(D..|$8
+        0x0020 48 8d 0d 00 00 00 00 48 89 4c 24 28 48 8d 0d 00  H......H.L$(H...
+        0x0030 00 00 00 48 89 4c 24 30 48 0f af c0 0f 1f 40 00  ...H.L$0H.....@.
+        0x0040 e8 00 00 00 00 48 8d 0d 00 00 00 00 48 89 4c 24  .....H......H.L$
+        0x0050 38 48 89 44 24 40 48 8b 1d 00 00 00 00 48 8d 05  8H.D$@H......H..
+        0x0060 00 00 00 00 48 8d 4c 24 28 bf 02 00 00 00 48 89  ....H.L$(.....H.
+        0x0070 fe e8 00 00 00 00 48 8b 6c 24 48 48 83 c4 50 90  ......H.l$HH..P.
+        0x0080 c3 48 89 44 24 08 e8 00 00 00 00 48 8b 44 24 08  .H.D$......H.D$.
+        0x0090 e9 6b ff ff ff                                   .k...
+        rel 2+0 t=23 type:string+0
+        rel 2+0 t=23 type:int+0
+        rel 2+0 t=23 type:*os.File+0
+        rel 35+4 t=14 type:string+0
+        rel 47+4 t=14 main..stmp_0+0
+        rel 65+4 t=7 runtime.convT64+0
+        rel 72+4 t=14 type:int+0
+        rel 89+4 t=14 os.Stdout+0
+        rel 96+4 t=14 go:itab.*os.File,io.Writer+0
+        rel 114+4 t=7 fmt.Fprintln+0
+        rel 135+4 t=7 runtime.morestack_noctxt+0
+main.main STEXT size=103 args=0x0 locals=0x18 funcid=0x0 align=0x0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      TEXT    main.main(SB), ABIInternal, $24-0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      CMPQ    SP, 16(R14)
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      PCDATA  $0, $-2
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      JLS     92
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      PCDATA  $0, $-1
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      SUBQ    $24, SP
+        0x000a 00010 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      MOVQ    BP, 16(SP)
+        0x000f 00015 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      LEAQ    16(SP), BP
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      FUNCDATA        $0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      FUNCDATA        $1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      LEAQ    main.main.func2·f(SB), AX
+        0x001b 00027 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $1, $0
+        0x001b 00027 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      NOP
+        0x0020 00032 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      CALL    runtime.newproc(SB)
+        0x0025 00037 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      LEAQ    type:noalg.struct { F uintptr; main.c int }(SB), AX
+        0x002c 00044 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CALL    runtime.newobject(SB)
+        0x0031 00049 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      LEAQ    main.main.func1(SB), CX
+        0x0038 00056 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    CX, (AX)
+        0x003b 00059 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    $20, 8(AX)
+        0x0043 00067 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CALL    runtime.newproc(SB)
+        0x0048 00072 (/Users/user/system_programming_with_go/14.parallel/arguments.go:18)      MOVL    $1000000000, AX
+        0x004d 00077 (/Users/user/system_programming_with_go/14.parallel/arguments.go:18)      CALL    time.Sleep(SB)
+        0x0052 00082 (/Users/user/system_programming_with_go/14.parallel/arguments.go:19)      MOVQ    16(SP), BP
+        0x0057 00087 (/Users/user/system_programming_with_go/14.parallel/arguments.go:19)      ADDQ    $24, SP
+        0x005b 00091 (/Users/user/system_programming_with_go/14.parallel/arguments.go:19)      RET
+        0x005c 00092 (/Users/user/system_programming_with_go/14.parallel/arguments.go:19)      NOP
+        0x005c 00092 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      PCDATA  $1, $-1
+        0x005c 00092 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      PCDATA  $0, $-2
+        0x005c 00092 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      NOP
+        0x0060 00096 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      CALL    runtime.morestack_noctxt(SB)
+        0x0065 00101 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      PCDATA  $0, $-1
+        0x0065 00101 (/Users/user/system_programming_with_go/14.parallel/arguments.go:11)      JMP     0
+        0x0000 49 3b 66 10 76 56 48 83 ec 18 48 89 6c 24 10 48  I;f.vVH...H.l$.H
+        0x0010 8d 6c 24 10 48 8d 05 00 00 00 00 0f 1f 44 00 00  .l$.H........D..
+        0x0020 e8 00 00 00 00 48 8d 05 00 00 00 00 e8 00 00 00  .....H..........
+        0x0030 00 48 8d 0d 00 00 00 00 48 89 08 48 c7 40 08 14  .H......H..H.@..
+        0x0040 00 00 00 e8 00 00 00 00 b8 00 ca 9a 3b e8 00 00  ............;...
+        0x0050 00 00 48 8b 6c 24 10 48 83 c4 18 c3 0f 1f 40 00  ..H.l$.H......@.
+        0x0060 e8 00 00 00 00 eb 99                             .......
+        rel 23+4 t=14 main.main.func2·f+0
+        rel 33+4 t=7 runtime.newproc+0
+        rel 40+4 t=14 type:noalg.struct { F uintptr; main.c int }+0
+        rel 45+4 t=7 runtime.newobject+0
+        rel 52+4 t=14 main.main.func1+0
+        rel 68+4 t=7 runtime.newproc+0
+        rel 78+4 t=7 time.Sleep+0
+        rel 97+4 t=7 runtime.morestack_noctxt+0
+main.main.func1 STEXT size=139 args=0x0 locals=0x50 funcid=0x0 align=0x0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      TEXT    main.main.func1(SB), NEEDCTXT|ABIInternal, $80-0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CMPQ    SP, 16(R14)
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-2
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      JLS     129
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-1
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      SUBQ    $80, SP
+        0x000a 00010 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    BP, 72(SP)
+        0x000f 00015 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      LEAQ    72(SP), BP
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $0, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $1, gclocals·hsx9l3OeZCHsoOW++oOEng==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $2, main.main.func1.stkobj(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    8(DX), AX
+        0x0018 00024 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVUPS  X15, main..autotmp_8+40(SP)
+        0x001e 00030 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVUPS  X15, main..autotmp_8+56(SP)
+        0x0024 00036 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    type:string(SB), CX
+        0x002b 00043 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+40(SP)
+        0x0030 00048 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    main..stmp_1(SB), CX
+        0x0037 00055 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+48(SP)
+        0x003c 00060 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      IMULQ   AX, AX
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      PCDATA  $1, $1
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      CALL    runtime.convT64(SB)
+        0x0045 00069 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    type:int(SB), CX
+        0x004c 00076 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+56(SP)
+        0x0051 00081 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    AX, main..autotmp_8+64(SP)
+        0x0056 00086 (<unknown line number>)    NOP
+        0x0056 00086 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    os.Stdout(SB), BX
+        0x005d 00093 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    go:itab.*os.File,io.Writer(SB), AX
+        0x0064 00100 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    main..autotmp_8+40(SP), CX
+        0x0069 00105 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVL    $2, DI
+        0x006e 00110 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    DI, SI
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) PCDATA  $1, $0
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) CALL    fmt.Fprintln(SB)
+        0x0076 00118 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      MOVQ    72(SP), BP
+        0x007b 00123 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      ADDQ    $80, SP
+        0x007f 00127 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      NOP
+        0x0080 00128 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      RET
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      NOP
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $1, $-1
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-2
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CALL    runtime.morestack(SB)
+        0x0086 00134 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-1
+        0x0086 00134 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      JMP     0
+        0x0000 49 3b 66 10 76 7b 48 83 ec 50 48 89 6c 24 48 48  I;f.v{H..PH.l$HH
+        0x0010 8d 6c 24 48 48 8b 42 08 44 0f 11 7c 24 28 44 0f  .l$HH.B.D..|$(D.
+        0x0020 11 7c 24 38 48 8d 0d 00 00 00 00 48 89 4c 24 28  .|$8H......H.L$(
+        0x0030 48 8d 0d 00 00 00 00 48 89 4c 24 30 48 0f af c0  H......H.L$0H...
+        0x0040 e8 00 00 00 00 48 8d 0d 00 00 00 00 48 89 4c 24  .....H......H.L$
+        0x0050 38 48 89 44 24 40 48 8b 1d 00 00 00 00 48 8d 05  8H.D$@H......H..
+        0x0060 00 00 00 00 48 8d 4c 24 28 bf 02 00 00 00 48 89  ....H.L$(.....H.
+        0x0070 fe e8 00 00 00 00 48 8b 6c 24 48 48 83 c4 50 90  ......H.l$HH..P.
+        0x0080 c3 e8 00 00 00 00 e9 75 ff ff ff                 .......u...
+        rel 2+0 t=23 type:string+0
+        rel 2+0 t=23 type:int+0
+        rel 2+0 t=23 type:*os.File+0
+        rel 39+4 t=14 type:string+0
+        rel 51+4 t=14 main..stmp_1+0
+        rel 65+4 t=7 runtime.convT64+0
+        rel 72+4 t=14 type:int+0
+        rel 89+4 t=14 os.Stdout+0
+        rel 96+4 t=14 go:itab.*os.File,io.Writer+0
+        rel 114+4 t=7 fmt.Fprintln+0
+        rel 130+4 t=7 runtime.morestack+0
+main.main.func2 STEXT size=76 args=0x0 locals=0x10 funcid=0x15 align=0x0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      TEXT    main.main.func2(SB), WRAPPER|ABIInternal, $16-0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      CMPQ    SP, 16(R14)
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $0, $-2
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      JLS     49
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $0, $-1
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      SUBQ    $16, SP
+        0x000a 00010 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      MOVQ    BP, 8(SP)
+        0x000f 00015 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      LEAQ    8(SP), BP
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      MOVQ    32(R14), R12
+        0x0018 00024 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      TESTQ   R12, R12
+        0x001b 00027 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      JNE     56
+        0x001d 00029 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      NOP
+        0x001d 00029 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      FUNCDATA        $0, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+        0x001d 00029 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      FUNCDATA        $1, gclocals·g2BeySu+wFnoycgXfElmcg==(SB)
+        0x001d 00029 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      FUNCDATA        $7, main.sub1.wrapinfo(SB)
+        0x001d 00029 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      MOVL    $10, AX
+        0x0022 00034 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $1, $0
+        0x0022 00034 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      CALL    main.sub1(SB)
+        0x0027 00039 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      MOVQ    8(SP), BP
+        0x002c 00044 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      ADDQ    $16, SP
+        0x0030 00048 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      RET
+        0x0031 00049 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      NOP
+        0x0031 00049 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $1, $-1
+        0x0031 00049 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $0, $-2
+        0x0031 00049 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      CALL    runtime.morestack_noctxt(SB)
+        0x0036 00054 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      PCDATA  $0, $-1
+        0x0036 00054 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      JMP     0
+        0x0038 00056 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      LEAQ    24(SP), R13
+        0x003d 00061 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      NOP
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      CMPQ    (R12), R13
+        0x0044 00068 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      JNE     29
+        0x0046 00070 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      MOVQ    SP, (R12)
+        0x004a 00074 (/Users/user/system_programming_with_go/14.parallel/arguments.go:12)      JMP     29
+        0x0000 49 3b 66 10 76 2b 48 83 ec 10 48 89 6c 24 08 48  I;f.v+H...H.l$.H
+        0x0010 8d 6c 24 08 4d 8b 66 20 4d 85 e4 75 1b b8 0a 00  .l$.M.f M..u....
+        0x0020 00 00 e8 00 00 00 00 48 8b 6c 24 08 48 83 c4 10  .......H.l$.H...
+        0x0030 c3 e8 00 00 00 00 eb c8 4c 8d 6c 24 18 0f 1f 00  ........L.l$....
+        0x0040 4d 39 2c 24 75 d7 49 89 24 24 eb d1              M9,$u.I.$$..
+        rel 35+4 t=7 main.sub1+0
+        rel 50+4 t=7 runtime.morestack_noctxt+0
+type:.eq.[2]interface {} STEXT dupok size=170 args=0x10 locals=0x28 funcid=0x0 align=0x0
+        0x0000 00000 (<autogenerated>:1)        TEXT    type:.eq.[2]interface {}(SB), DUPOK|ABIInternal, $40-16
+        0x0000 00000 (<autogenerated>:1)        CMPQ    SP, 16(R14)
+        0x0004 00004 (<autogenerated>:1)        PCDATA  $0, $-2
+        0x0004 00004 (<autogenerated>:1)        JLS     140
+        0x000a 00010 (<autogenerated>:1)        PCDATA  $0, $-1
+        0x000a 00010 (<autogenerated>:1)        SUBQ    $40, SP
+        0x000e 00014 (<autogenerated>:1)        MOVQ    BP, 32(SP)
+        0x0013 00019 (<autogenerated>:1)        LEAQ    32(SP), BP
+        0x0018 00024 (<autogenerated>:1)        FUNCDATA        $0, gclocals·TjPuuCwdlCpTaRQGRKTrYw==(SB)
+        0x0018 00024 (<autogenerated>:1)        FUNCDATA        $1, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+        0x0018 00024 (<autogenerated>:1)        FUNCDATA        $5, type:.eq.[2]interface {}.arginfo1(SB)
+        0x0018 00024 (<autogenerated>:1)        FUNCDATA        $6, type:.eq.[2]interface {}.argliveinfo(SB)
+        0x0018 00024 (<autogenerated>:1)        PCDATA  $3, $1
+        0x0018 00024 (<autogenerated>:1)        MOVQ    AX, main.p+48(SP)
+        0x001d 00029 (<autogenerated>:1)        MOVQ    BX, main.q+56(SP)
+        0x0022 00034 (<autogenerated>:1)        PCDATA  $3, $-1
+        0x0022 00034 (<autogenerated>:1)        XORL    CX, CX
+        0x0024 00036 (<autogenerated>:1)        JMP     56
+        0x0026 00038 (<autogenerated>:1)        MOVQ    main..autotmp_6+24(SP), CX
+        0x002b 00043 (<autogenerated>:1)        INCQ    CX
+        0x002e 00046 (<autogenerated>:1)        MOVQ    main.q+56(SP), BX
+        0x0033 00051 (<autogenerated>:1)        MOVQ    main.p+48(SP), AX
+        0x0038 00056 (<autogenerated>:1)        CMPQ    CX, $2
+        0x003c 00060 (<autogenerated>:1)        JGE     127
+        0x003e 00062 (<autogenerated>:1)        MOVQ    CX, DX
+        0x0041 00065 (<autogenerated>:1)        SHLQ    $4, CX
+        0x0045 00069 (<autogenerated>:1)        MOVQ    (AX)(CX*1), SI
+        0x0049 00073 (<autogenerated>:1)        MOVQ    (BX)(CX*1), DI
+        0x004d 00077 (<autogenerated>:1)        MOVQ    8(CX)(AX*1), R8
+        0x0052 00082 (<autogenerated>:1)        MOVQ    8(CX)(BX*1), CX
+        0x0057 00087 (<autogenerated>:1)        CMPQ    DI, SI
+        0x005a 00090 (<autogenerated>:1)        JNE     123
+        0x005c 00092 (<autogenerated>:1)        MOVQ    DX, main..autotmp_6+24(SP)
+        0x0061 00097 (<autogenerated>:1)        MOVQ    SI, AX
+        0x0064 00100 (<autogenerated>:1)        MOVQ    R8, BX
+        0x0067 00103 (<autogenerated>:1)        PCDATA  $1, $0
+        0x0067 00103 (<autogenerated>:1)        CALL    runtime.efaceeq(SB)
+        0x006c 00108 (<autogenerated>:1)        TESTB   AL, AL
+        0x006e 00110 (<autogenerated>:1)        JNE     38
+        0x0070 00112 (<autogenerated>:1)        MOVQ    main..autotmp_6+24(SP), CX
+        0x0075 00117 (<autogenerated>:1)        CMPQ    CX, $2
+        0x0079 00121 (<autogenerated>:1)        JMP     127
+        0x007b 00123 (<autogenerated>:1)        CMPQ    DX, $2
+        0x007f 00127 (<autogenerated>:1)        SETGE   AL
+        0x0082 00130 (<autogenerated>:1)        MOVQ    32(SP), BP
+        0x0087 00135 (<autogenerated>:1)        ADDQ    $40, SP
+        0x008b 00139 (<autogenerated>:1)        RET
+        0x008c 00140 (<autogenerated>:1)        NOP
+        0x008c 00140 (<autogenerated>:1)        PCDATA  $1, $-1
+        0x008c 00140 (<autogenerated>:1)        PCDATA  $0, $-2
+        0x008c 00140 (<autogenerated>:1)        MOVQ    AX, 8(SP)
+        0x0091 00145 (<autogenerated>:1)        MOVQ    BX, 16(SP)
+        0x0096 00150 (<autogenerated>:1)        CALL    runtime.morestack_noctxt(SB)
+        0x009b 00155 (<autogenerated>:1)        MOVQ    8(SP), AX
+        0x00a0 00160 (<autogenerated>:1)        MOVQ    16(SP), BX
+        0x00a5 00165 (<autogenerated>:1)        PCDATA  $0, $-1
+        0x00a5 00165 (<autogenerated>:1)        JMP     0
+        0x0000 49 3b 66 10 0f 86 82 00 00 00 48 83 ec 28 48 89  I;f.......H..(H.
+        0x0010 6c 24 20 48 8d 6c 24 20 48 89 44 24 30 48 89 5c  l$ H.l$ H.D$0H.\
+        0x0020 24 38 31 c9 eb 12 48 8b 4c 24 18 48 ff c1 48 8b  $81...H.L$.H..H.
+        0x0030 5c 24 38 48 8b 44 24 30 48 83 f9 02 7d 41 48 89  \$8H.D$0H...}AH.
+        0x0040 ca 48 c1 e1 04 48 8b 34 08 48 8b 3c 0b 4c 8b 44  .H...H.4.H.<.L.D
+        0x0050 01 08 48 8b 4c 19 08 48 39 f7 75 1f 48 89 54 24  ..H.L..H9.u.H.T$
+        0x0060 18 48 89 f0 4c 89 c3 e8 00 00 00 00 84 c0 75 b6  .H..L.........u.
+        0x0070 48 8b 4c 24 18 48 83 f9 02 eb 04 48 83 fa 02 0f  H.L$.H.....H....
+        0x0080 9d c0 48 8b 6c 24 20 48 83 c4 28 c3 48 89 44 24  ..H.l$ H..(.H.D$
+        0x0090 08 48 89 5c 24 10 e8 00 00 00 00 48 8b 44 24 08  .H.\$......H.D$.
+        0x00a0 48 8b 5c 24 10 e9 56 ff ff ff                    H.\$..V...
+        rel 104+4 t=7 runtime.efaceeq+0
+        rel 151+4 t=7 runtime.morestack_noctxt+0
+go:cuinfo.producer.main SDWARFCUINFO dupok size=0
+        0x0000 72 65 67 61 62 69                                regabi
+go:cuinfo.packagename.main SDWARFCUINFO dupok size=0
+        0x0000 6d 61 69 6e                                      main
+go:info.fmt.Println$abstract SDWARFABSFCN dupok size=42
+        0x0000 05 66 6d 74 2e 50 72 69 6e 74 6c 6e 00 01 01 13  .fmt.Println....
+        0x0010 61 00 00 00 00 00 00 13 6e 00 01 00 00 00 00 13  a.......n.......
+        0x0020 65 72 72 00 01 00 00 00 00 00                    err.......
+        rel 0+0 t=22 type:[]interface {}+0
+        rel 0+0 t=22 type:error+0
+        rel 0+0 t=22 type:int+0
+        rel 19+4 t=31 go:info.[]interface {}+0
+        rel 27+4 t=31 go:info.int+0
+        rel 37+4 t=31 go:info.error+0
+go:itab.*os.File,io.Writer SRODATA dupok size=32
+        0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0010 5a 22 ee 60 00 00 00 00 00 00 00 00 00 00 00 00  Z".`............
+        rel 0+8 t=1 type:io.Writer+0
+        rel 8+8 t=1 type:*os.File+0
+        rel 24+8 t=-32767 os.(*File).Write+0
+main..inittask SNOPTRDATA size=40
+        0x0000 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00  ................
+        0x0010 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0020 00 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=1 fmt..inittask+0
+        rel 32+8 t=1 time..inittask+0
+go:string."share by arguments:" SRODATA dupok size=19
+        0x0000 73 68 61 72 65 20 62 79 20 61 72 67 75 6d 65 6e  share by argumen
+        0x0010 74 73 3a                                         ts:
+go:string."share by capture" SRODATA dupok size=16
+        0x0000 73 68 61 72 65 20 62 79 20 63 61 70 74 75 72 65  share by capture
+main..stmp_0 SRODATA static size=16
+        0x0000 00 00 00 00 00 00 00 00 13 00 00 00 00 00 00 00  ................
+        rel 0+8 t=1 go:string."share by arguments:"+0
+main..stmp_1 SRODATA static size=16
+        0x0000 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00  ................
+        rel 0+8 t=1 go:string."share by capture"+0
+type:.eqfunc.[2]interface {} SRODATA dupok size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+        rel 0+8 t=1 type:.eq.[2]interface {}+0
+runtime.memequal64·f SRODATA dupok size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+        rel 0+8 t=1 runtime.memequal64+0
+runtime.gcbits.0100000000000000 SRODATA dupok size=8
+        0x0000 01 00 00 00 00 00 00 00                          ........
+type:.namedata.*[2]interface {}- SRODATA dupok size=18
+        0x0000 00 10 2a 5b 32 5d 69 6e 74 65 72 66 61 63 65 20  ..*[2]interface 
+        0x0010 7b 7d                                            {}
+type:*[2]interface {} SRODATA dupok size=56
+        0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+        0x0010 53 dc 6b 00 08 08 08 36 00 00 00 00 00 00 00 00  S.k....6........
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=1 runtime.memequal64·f+0
+        rel 32+8 t=1 runtime.gcbits.0100000000000000+0
+        rel 40+4 t=5 type:.namedata.*[2]interface {}-+0
+        rel 48+8 t=1 type:[2]interface {}+0
+runtime.gcbits.0a00000000000000 SRODATA dupok size=8
+        0x0000 0a 00 00 00 00 00 00 00                          ........
+type:[2]interface {} SRODATA dupok size=72
+        0x0000 20 00 00 00 00 00 00 00 20 00 00 00 00 00 00 00   ....... .......
+        0x0010 0a f3 b4 b4 02 08 08 11 00 00 00 00 00 00 00 00  ................
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0040 02 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=1 type:.eqfunc.[2]interface {}+0
+        rel 32+8 t=1 runtime.gcbits.0a00000000000000+0
+        rel 40+4 t=5 type:.namedata.*[2]interface {}-+0
+        rel 44+4 t=-32763 type:*[2]interface {}+0
+        rel 48+8 t=1 type:interface {}+0
+        rel 56+8 t=1 type:[]interface {}+0
+type:.namedata.*struct { F uintptr; c int }- SRODATA dupok size=30
+        0x0000 00 1c 2a 73 74 72 75 63 74 20 7b 20 46 20 75 69  ..*struct { F ui
+        0x0010 6e 74 70 74 72 3b 20 63 20 69 6e 74 20 7d        ntptr; c int }
+type:*struct { F uintptr; main.c int } SRODATA dupok size=56
+        0x0000 08 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+        0x0010 91 04 db 54 08 08 08 36 00 00 00 00 00 00 00 00  ...T...6........
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00                          ........
+        rel 24+8 t=1 runtime.memequal64·f+0
+        rel 32+8 t=1 runtime.gcbits.0100000000000000+0
+        rel 40+4 t=5 type:.namedata.*struct { F uintptr; c int }-+0
+        rel 48+8 t=1 type:noalg.struct { F uintptr; main.c int }+0
+runtime.gcbits. SRODATA dupok size=0
+type:.importpath.main. SRODATA dupok size=6
+        0x0000 00 04 6d 61 69 6e                                ..main
+type:.namedata..F- SRODATA dupok size=4
+        0x0000 00 02 2e 46                                      ...F
+type:.namedata.c- SRODATA dupok size=3
+        0x0000 00 01 63                                         ..c
+type:noalg.struct { F uintptr; main.c int } SRODATA dupok size=128
+        0x0000 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0010 75 ef 29 df 02 08 08 19 00 00 00 00 00 00 00 00  u.).............
+        0x0020 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0040 02 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00  ................
+        0x0050 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0060 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+        0x0070 00 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00  ................
+        rel 32+8 t=1 runtime.gcbits.+0
+        rel 40+4 t=5 type:.namedata.*struct { F uintptr; c int }-+0
+        rel 44+4 t=-32763 type:*struct { F uintptr; main.c int }+0
+        rel 48+8 t=1 type:.importpath.main.+0
+        rel 56+8 t=1 type:noalg.struct { F uintptr; main.c int }+80
+        rel 80+8 t=1 type:.namedata..F-+0
+        rel 88+8 t=1 type:uintptr+0
+        rel 104+8 t=1 type:.namedata.c-+0
+        rel 112+8 t=1 type:int+0
+type:.importpath.fmt. SRODATA dupok size=5
+        0x0000 00 03 66 6d 74                                   ..fmt
+type:.importpath.time. SRODATA dupok size=6
+        0x0000 00 04 74 69 6d 65                                ..time
+main.main.func2·f SRODATA dupok size=8
+        0x0000 00 00 00 00 00 00 00 00                          ........
+        rel 0+8 t=1 main.main.func2+0
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ== SRODATA dupok size=8
+        0x0000 02 00 00 00 00 00 00 00                          ........
+gclocals·hsx9l3OeZCHsoOW++oOEng== SRODATA dupok size=10
+        0x0000 02 00 00 00 04 00 00 00 00 0a                    ..........
+main.sub1.stkobj SRODATA static size=24
+        0x0000 01 00 00 00 00 00 00 00 e0 ff ff ff 20 00 00 00  ............ ...
+        0x0010 20 00 00 00 00 00 00 00                           .......
+        rel 20+4 t=5 runtime.gcbits.0a00000000000000+0
+main.sub1.arginfo1 SRODATA static dupok size=3
+        0x0000 00 08 ff                                         ...
+main.sub1.argliveinfo SRODATA static dupok size=2
+        0x0000 00 00                                            ..
+gclocals·g2BeySu+wFnoycgXfElmcg== SRODATA dupok size=8
+        0x0000 01 00 00 00 00 00 00 00                          ........
+main.main.func1.stkobj SRODATA static size=24
+        0x0000 01 00 00 00 00 00 00 00 e0 ff ff ff 20 00 00 00  ............ ...
+        0x0010 20 00 00 00 00 00 00 00                           .......
+        rel 20+4 t=5 runtime.gcbits.0a00000000000000+0
+main.sub1.wrapinfo SRODATA static dupok size=4
+        0x0000 00 00 00 00                                      ....
+        rel 0+4 t=5 main.sub1+0
+gclocals·TjPuuCwdlCpTaRQGRKTrYw== SRODATA dupok size=10
+        0x0000 02 00 00 00 02 00 00 00 03 00                    ..........
+type:.eq.[2]interface {}.arginfo1 SRODATA static dupok size=3
+        0x0000 08 08 ff                                         ...
+type:.eq.[2]interface {}.argliveinfo SRODATA static dupok size=2
+        0x0000 00 00                                            ..

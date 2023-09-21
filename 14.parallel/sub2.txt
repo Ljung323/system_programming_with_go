@@ -1,0 +1,63 @@
+main.main.func1 STEXT size=139 args=0x0 locals=0x50 funcid=0x0 align=0x0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      TEXT    main.main.func1(SB), NEEDCTXT|ABIInternal, $80-0
+        0x0000 00000 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CMPQ    SP, 16(R14)
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-2
+        0x0004 00004 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      JLS     129
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-1
+        0x0006 00006 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      SUBQ    $80, SP
+        0x000a 00010 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    BP, 72(SP)
+        0x000f 00015 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      LEAQ    72(SP), BP
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $0, gclocals·J5F+7Qw7O7ve2QcWC7DpeQ==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $1, gclocals·hsx9l3OeZCHsoOW++oOEng==(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      FUNCDATA        $2, main.main.func1.stkobj(SB)
+        0x0014 00020 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      MOVQ    8(DX), AX
+        0x0018 00024 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVUPS  X15, main..autotmp_8+40(SP)
+        0x001e 00030 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVUPS  X15, main..autotmp_8+56(SP)
+        0x0024 00036 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    type:string(SB), CX
+        0x002b 00043 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+40(SP)
+        0x0030 00048 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    main..stmp_1(SB), CX
+        0x0037 00055 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+48(SP)
+        0x003c 00060 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      IMULQ   AX, AX
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      PCDATA  $1, $1
+        0x0040 00064 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      CALL    runtime.convT64(SB)
+        0x0045 00069 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      LEAQ    type:int(SB), CX
+        0x004c 00076 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    CX, main..autotmp_8+56(SP)
+        0x0051 00081 (/Users/user/system_programming_with_go/14.parallel/arguments.go:16)      MOVQ    AX, main..autotmp_8+64(SP)
+        0x0056 00086 (<unknown line number>)    NOP
+        0x0056 00086 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    os.Stdout(SB), BX
+        0x005d 00093 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    go:itab.*os.File,io.Writer(SB), AX
+        0x0064 00100 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) LEAQ    main..autotmp_8+40(SP), CX
+        0x0069 00105 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVL    $2, DI
+        0x006e 00110 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) MOVQ    DI, SI
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) PCDATA  $1, $0
+        0x0071 00113 (/usr/local/Cellar/go/1.20.1/libexec/src/fmt/print.go:314) CALL    fmt.Fprintln(SB)
+        0x0076 00118 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      MOVQ    72(SP), BP
+        0x007b 00123 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      ADDQ    $80, SP
+        0x007f 00127 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      NOP
+        0x0080 00128 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      RET
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:17)      NOP
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $1, $-1
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-2
+        0x0081 00129 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      CALL    runtime.morestack(SB)
+        0x0086 00134 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      PCDATA  $0, $-1
+        0x0086 00134 (/Users/user/system_programming_with_go/14.parallel/arguments.go:15)      JMP     0
+        0x0000 49 3b 66 10 76 7b 48 83 ec 50 48 89 6c 24 48 48  I;f.v{H..PH.l$HH
+        0x0010 8d 6c 24 48 48 8b 42 08 44 0f 11 7c 24 28 44 0f  .l$HH.B.D..|$(D.
+        0x0020 11 7c 24 38 48 8d 0d 00 00 00 00 48 89 4c 24 28  .|$8H......H.L$(
+        0x0030 48 8d 0d 00 00 00 00 48 89 4c 24 30 48 0f af c0  H......H.L$0H...
+        0x0040 e8 00 00 00 00 48 8d 0d 00 00 00 00 48 89 4c 24  .....H......H.L$
+        0x0050 38 48 89 44 24 40 48 8b 1d 00 00 00 00 48 8d 05  8H.D$@H......H..
+        0x0060 00 00 00 00 48 8d 4c 24 28 bf 02 00 00 00 48 89  ....H.L$(.....H.
+        0x0070 fe e8 00 00 00 00 48 8b 6c 24 48 48 83 c4 50 90  ......H.l$HH..P.
+        0x0080 c3 e8 00 00 00 00 e9 75 ff ff ff                 .......u...
+        rel 2+0 t=23 type:string+0
+        rel 2+0 t=23 type:int+0
+        rel 2+0 t=23 type:*os.File+0
+        rel 39+4 t=14 type:string+0
+        rel 51+4 t=14 main..stmp_1+0
+        rel 65+4 t=7 runtime.convT64+0
+        rel 72+4 t=14 type:int+0
+        rel 89+4 t=14 os.Stdout+0
+        rel 96+4 t=14 go:itab.*os.File,io.Writer+0
+        rel 114+4 t=7 fmt.Fprintln+0
+        rel 130+4 t=7 runtime.morestack+0
