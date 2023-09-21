@@ -3,8 +3,8 @@
 
 ## 14.1 複数の仕事を同時に行うとは?
 
-並行（concurrent）: CPU数、コア数の限界を超えて複数の仕事を同時に行う（スループットは変わらない）
-並列（parallel）: 複数のCPU、コアを効率よく扱って計算速度を上げる（スループットが向上する）
+- 並行（concurrent）: CPU数、コア数の限界を超えて複数の仕事を同時に行う（スループットは変わらない）
+- 並列（parallel）: 複数のCPU、コアを効率よく扱って計算速度を上げる（スループットが向上する）
 
 >Concurrency is the ability of two or more threads to execute in overlapping time periods. 
 Parallelism is the ability to execute two or more threads simultaneously.
